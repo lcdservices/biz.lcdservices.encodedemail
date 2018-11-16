@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<extension key="biz.lcdservices.encryptedemail" type="module">
-  <file>encryptedemail</file>
-  <name>Encrypted Email Token</name>
+<extension key="biz.lcdservices.encodedemail" type="module">
+  <file>encodedemail</file>
+  <name>Encoded Email Token</name>
   <description>Creates a token with a base64-encoded email.</description>
   <license>AGPL-3.0</license>
   <maintainer>
@@ -9,9 +9,9 @@
     <email>dev@lcdservices.biz</email>
   </maintainer>
   <urls>
-    <url desc="Main Extension Page">https://github.com/lcdservices/biz.lcdservices.encryptedemail</url>
-    <url desc="Documentation">https://github.com/lcdservices/biz.lcdservices.encryptedemail</url>
-    <url desc="Support">https://github.com/lcdservices/biz.lcdservices.encryptedemail/issues</url>
+    <url desc="Main Extension Page">https://github.com/lcdservices/biz.lcdservices.encodedemail</url>
+    <url desc="Documentation">https://github.com/lcdservices/biz.lcdservices.encodedemail</url>
+    <url desc="Support">https://github.com/lcdservices/biz.lcdservices.encodedemail/issues</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
   <releaseDate>2018-11-16</releaseDate>
@@ -22,6 +22,6 @@
   </compatibility>
   <comments></comments>
   <civix>
-    <namespace>CRM/Encryptedemail</namespace>
+    <namespace>CRM/Encodedemail</namespace>
   </civix>
 </extension>

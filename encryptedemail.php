@@ -1,15 +1,15 @@
 <?php
 
-require_once 'encryptedemail.civix.php';
-use CRM_Encryptedemail_ExtensionUtil as E;
+require_once 'encodedemail.civix.php';
+use CRM_Encodedemail_ExtensionUtil as E;
 
 /**
  * Implements hook_civicrm_config().
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_config
  */
-function encryptedemail_civicrm_config(&$config) {
-  _encryptedemail_civix_civicrm_config($config);
+function encodedemail_civicrm_config(&$config) {
+  _encodedemail_civix_civicrm_config($config);
 }
 
 /**
@@ -17,8 +17,8 @@ function encryptedemail_civicrm_config(&$config) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_xmlMenu
  */
-function encryptedemail_civicrm_xmlMenu(&$files) {
-  _encryptedemail_civix_civicrm_xmlMenu($files);
+function encodedemail_civicrm_xmlMenu(&$files) {
+  _encodedemail_civix_civicrm_xmlMenu($files);
 }
 
 /**
@@ -26,8 +26,8 @@ function encryptedemail_civicrm_xmlMenu(&$files) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_install
  */
-function encryptedemail_civicrm_install() {
-  _encryptedemail_civix_civicrm_install();
+function encodedemail_civicrm_install() {
+  _encodedemail_civix_civicrm_install();
 }
 
 /**
@@ -35,8 +35,8 @@ function encryptedemail_civicrm_install() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_postInstall
  */
-function encryptedemail_civicrm_postInstall() {
-  _encryptedemail_civix_civicrm_postInstall();
+function encodedemail_civicrm_postInstall() {
+  _encodedemail_civix_civicrm_postInstall();
 }
 
 /**
@@ -44,8 +44,8 @@ function encryptedemail_civicrm_postInstall() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_uninstall
  */
-function encryptedemail_civicrm_uninstall() {
-  _encryptedemail_civix_civicrm_uninstall();
+function encodedemail_civicrm_uninstall() {
+  _encodedemail_civix_civicrm_uninstall();
 }
 
 /**
@@ -53,8 +53,8 @@ function encryptedemail_civicrm_uninstall() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_enable
  */
-function encryptedemail_civicrm_enable() {
-  _encryptedemail_civix_civicrm_enable();
+function encodedemail_civicrm_enable() {
+  _encodedemail_civix_civicrm_enable();
 }
 
 /**
@@ -62,8 +62,8 @@ function encryptedemail_civicrm_enable() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_disable
  */
-function encryptedemail_civicrm_disable() {
-  _encryptedemail_civix_civicrm_disable();
+function encodedemail_civicrm_disable() {
+  _encodedemail_civix_civicrm_disable();
 }
 
 /**
@@ -71,8 +71,8 @@ function encryptedemail_civicrm_disable() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_upgrade
  */
-function encryptedemail_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
-  return _encryptedemail_civix_civicrm_upgrade($op, $queue);
+function encodedemail_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
+  return _encodedemail_civix_civicrm_upgrade($op, $queue);
 }
 
 /**
@@ -83,8 +83,8 @@ function encryptedemail_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_managed
  */
-function encryptedemail_civicrm_managed(&$entities) {
-  _encryptedemail_civix_civicrm_managed($entities);
+function encodedemail_civicrm_managed(&$entities) {
+  _encodedemail_civix_civicrm_managed($entities);
 }
 
 /**
@@ -96,8 +96,8 @@ function encryptedemail_civicrm_managed(&$entities) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_caseTypes
  */
-function encryptedemail_civicrm_caseTypes(&$caseTypes) {
-  _encryptedemail_civix_civicrm_caseTypes($caseTypes);
+function encodedemail_civicrm_caseTypes(&$caseTypes) {
+  _encodedemail_civix_civicrm_caseTypes($caseTypes);
 }
 
 /**
@@ -110,8 +110,8 @@ function encryptedemail_civicrm_caseTypes(&$caseTypes) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_angularModules
  */
-function encryptedemail_civicrm_angularModules(&$angularModules) {
-  _encryptedemail_civix_civicrm_angularModules($angularModules);
+function encodedemail_civicrm_angularModules(&$angularModules) {
+  _encodedemail_civix_civicrm_angularModules($angularModules);
 }
 
 /**
@@ -119,8 +119,8 @@ function encryptedemail_civicrm_angularModules(&$angularModules) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_alterSettingsFolders
  */
-function encryptedemail_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
-  _encryptedemail_civix_civicrm_alterSettingsFolders($metaDataFolders);
+function encodedemail_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
+  _encodedemail_civix_civicrm_alterSettingsFolders($metaDataFolders);
 }
 
 /**
@@ -130,22 +130,22 @@ function encryptedemail_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_entityTypes
  */
-function encryptedemail_civicrm_entityTypes(&$entityTypes) {
-  _encryptedemail_civix_civicrm_entityTypes($entityTypes);
+function encodedemail_civicrm_entityTypes(&$entityTypes) {
+  _encodedemail_civix_civicrm_entityTypes($entityTypes);
 }
 
-function encryptedemail_civicrm_tokens(&$tokens) {
-  $tokens['encryptedemail'] = array(
-    'encryptedemail.encryptedemail' => ts("Encrypted Email"),
+function encodedemail_civicrm_tokens(&$tokens) {
+  $tokens['encodedemail'] = array(
+    'encodedemail.encodedemail' => ts("Encoded Email"),
   );
 }
 
-function encryptedemail_civicrm_tokenValues(&$values, $cids, $job = null, $tokens = array(), $context = null) {
+function encodedemail_civicrm_tokenValues(&$values, $cids, $job = null, $tokens = array(), $context = null) {
   //Civi::log()->debug('', ['$tokens' => $tokens, '$values' => $values]);
 
-  if (!empty($tokens['encryptedemail'])) {
+  if (!empty($tokens['encodedemail'])) {
     foreach ($cids as $cid) {
-      $encryptedEmail = NULL;
+      $encodedEmail = NULL;
       try {
         $email = civicrm_api3('email', 'get', [
           'contact_id' => $cid,
@@ -154,13 +154,13 @@ function encryptedemail_civicrm_tokenValues(&$values, $cids, $job = null, $token
         ]);
 
         if (!empty($email['count'])) {
-          $encryptedEmail = base64_encode($email['values'][0]['email']);
+          $encodedEmail = base64_encode($email['values'][0]['email']);
         }
       }
       catch (CRM_API3_Exception $e) {}
 
-      $values[$cid]['encryptedemail.encryptedemail'] = $encryptedEmail;
-      $values[$cid]['encryptedemail'] = $encryptedEmail;
+      $values[$cid]['encodedemail.encodedemail'] = $encodedEmail;
+      $values[$cid]['encodedemail'] = $encodedEmail;
     }
   }
 }

@@ -1,6 +1,6 @@
-# biz.lcdservices.encryptedemail
+# biz.lcdservices.encodedemail
 
-This extension creates a new token entitled "Encrypted Email" which encrypts and returns the contact's primary email.
+This extension creates a new token entitled "Encoded Email" which encrypts and returns the contact's primary email.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
@@ -20,7 +20,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl biz.lcdservices.encryptedemail@https://github.com/FIXME/biz.lcdservices.encryptedemail/archive/master.zip
+cv dl biz.lcdservices.encodedemail@https://github.com/FIXME/biz.lcdservices.encodedemail/archive/master.zip
 ```
 
 ## Installation (CLI, Git)
@@ -29,6 +29,6 @@ Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) 
 install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
-git clone https://github.com/FIXME/biz.lcdservices.encryptedemail.git
-cv en encryptedemail
+git clone https://github.com/lcdservices/biz.lcdservices.encodedemail.git
+cv en encodedemail
 ```
