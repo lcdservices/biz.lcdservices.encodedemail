@@ -1,8 +1,6 @@
 # biz.lcdservices.encryptedemail
 
-![Screenshot](/images/screenshot.png)
-
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+This extension creates a new token entitled "Encrypted Email" which encrypts and returns the contact's primary email.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
@@ -34,11 +32,3 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 git clone https://github.com/FIXME/biz.lcdservices.encryptedemail.git
 cv en encryptedemail
 ```
-
-## Usage
-
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
-
-## Known Issues
-
-(* FIXME *)
