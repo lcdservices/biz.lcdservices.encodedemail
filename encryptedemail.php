@@ -141,11 +141,13 @@ function encryptedemail_civicrm_tokens(&$tokens) {
 }
 
 function encryptedemail_civicrm_tokenValues(&$values, $cids, $job = null, $tokens = array(), $context = null) {
+  //Civi::log()->debug('', ['$tokens' => $tokens, '$values' => $values]);
+
   if (!empty($tokens['encryptedemail'])) {
     foreach ($cids as $cid) {
       $encryptedEmail = NULL;
       try {
-        $email = civicrm_api3('email', 'contact', [
+        $email = civicrm_api3('email', 'get', [
           'contact_id' => $cid,
           'is_primary' => 1,
           'sequential' => 1,
@@ -157,7 +159,8 @@ function encryptedemail_civicrm_tokenValues(&$values, $cids, $job = null, $token
       }
       catch (CRM_API3_Exception $e) {}
 
-      $values[$cid] = $encryptedEmail;
+      $values[$cid]['encryptedemail.encryptedemail'] = $encryptedEmail;
+      $values[$cid]['encryptedemail'] = $encryptedEmail;
     }
   }
 }
