@@ -154,7 +154,7 @@ function encodedemail_civicrm_tokenValues(&$values, $cids, $job = null, $tokens 
         ]);
 
         if (!empty($email['count'])) {
-          $encodedEmail = base64_encode($email['values'][0]['email']);
+          $encodedEmail = urlencode(base64_encode($email['values'][0]['email']));
         }
       }
       catch (CRM_API3_Exception $e) {}

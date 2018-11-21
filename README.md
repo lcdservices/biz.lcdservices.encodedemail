@@ -1,6 +1,6 @@
 # biz.lcdservices.encodedemail
 
-This extension creates a new token entitled "Encoded Email" which encrypts and returns the contact's primary email.
+This extension creates a new token entitled "Encoded Email" which encodes and returns the contact's primary email. It first applies a base 64 encode, and then a URI encode.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
